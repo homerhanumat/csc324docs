@@ -1,0 +1,3 @@
+baseURL = "http://example.com"
+buildDrafts = true
+minify = false

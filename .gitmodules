@@ -1,0 +1,3 @@
+[submodule "themes/opengitdocs"]
+	path = themes/opengitdocs
+	url = https://github.com/opengitdocs/hugo.git
