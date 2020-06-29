@@ -7,6 +7,8 @@ level: 1
 
 The instructor and class members writer about themselves here.
 
+<!--more-->
+
 ## How to Contribute
 
 Pull from the repository.  In the terminal, run:
