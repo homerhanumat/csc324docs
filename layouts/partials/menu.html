@@ -1,0 +1,27 @@
+<ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Pages }}
+    {{ if and (eq .Params.level 1) (not .IsHome) }}
+    <li class="{{ if eq .RelPermalink $currentPage.RelPermalink . }}active{{ end }}">
+        <a href="{{ .RelPermalink }}">
+            <span>{{ .Title }}</span>
+        </a>
+    </li>
+    {{ if $.Site.Params.sideBarExpanded }}
+    {{ range .Pages }}
+    <ul class="sub-menu">
+        <li class="{{ if eq .RelPermalink $currentPage.RelPermalink . }}active{{ end }}">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+    </ul>
+    {{ end }}
+    {{ end }}
+    {{ else if and (eq .Parent .Site.Home) .IsPage }}
+    <li class="{{ if eq .RelPermalink $currentPage.RelPermalink . }}active{{ end }}">
+        <a href="{{ .RelPermalink }}">
+            <span>{{ .Title }}</span>
+        </a>
+    </li>
+    {{ end }}
+    {{ end }}
+</ul>

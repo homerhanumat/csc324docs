@@ -1,0 +1,31 @@
+languageCode: en-us
+title: CSC 324
+publishDir: docs
+theme: opengitdocs
+
+enableGitInfo: true # Show last modified date on pages
+sectionPagesMenu: main
+
+params:
+  description: An open source static site solution for documentation websites.
+  images:
+    - /img/screenshot.png # Used in site metadata
+  title: OpenGitDocs for Hugo
+  logo: /img/book-open.svg # Path from root to your logo, best served 1:1 ratio
+  icon: /img/book-open-dark.svg # Path to favicon
+  colorTheme: "light" # "light" or "dark"
+  mainColor: "" # Hex color for the sidebar, i.e. "#016087"
+  sideBarExpanded: true # Show all subsections in sidebar on desktop screens
+  footerText: "[CSC 324 Docs on Github](https://github.com/homerhanumat/csc324docs)" # Shown at the bottom of pages
+
+markup: # See https://gohugo.io/getting-started/configuration-markup for more
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    style: solarized-light
+    tabWidth: 2

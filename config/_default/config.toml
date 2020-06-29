@@ -1,9 +1,0 @@
-languageCode = "en-us"
-title = "CSC 324"
-publishDir = "docs"
-theme = "opengitdocs"
-
-enableGitInfo = true # Show last modified date on pages
-sectionPagesMenu = "main"
-
-

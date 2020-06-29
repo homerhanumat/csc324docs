@@ -1,0 +1,11 @@
+<div id="grid">
+    <ul id="list-grid">
+        {{ range $.Page.Site.Sections }}
+        <li>
+            <a href="{{.RelPermalink}}"><h2>{{.Title}}</h2></a>
+            <p>{{ .Summary | truncate 200 }}</p>
+            {{ if .Date }}<p id="date">{{ .Date.Format "Mon Jan 2, 2006" }}</a>{{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>

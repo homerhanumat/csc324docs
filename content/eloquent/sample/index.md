@@ -1,8 +1,9 @@
 ---
-title: "Sample"
-author: "homer White"
+title: "A Sample Solution"
+author: "Homer White"
 date: 2020-06-29T14:25:24-04:00
 draft: false
+type: article
 ---
 
 This is hypothetical solution, to give you the idea.

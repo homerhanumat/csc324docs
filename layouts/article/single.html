@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ if not $.Site.Params.sideBarExpanded }}
+{{ partial "breadcrumb.html" . }}
+{{ end }}
+<section id="main" aria-role="main">
+    <h1 id="title">{{ .Title }}</h1>
+    <div style="margin: 20px 0 20px 0;"><strong>Author:</strong> {{ .Params.Author }}</div>
+    <article id="content">
+        {{ .Content }}
+    </article>
+</section>
+<section id="paging">
+    <div>
+        {{ with .NextInSection }}
+        <a class="previous" href="{{.RelPermalink}}">⟵ Previous: {{.Title}}</a>
+        {{ end }}
+    </div>
+    <div>
+        {{ with .PrevInSection }}
+        <a class="next" href="{{.RelPermalink}}">Next: {{.Title}} ⟶</a>
+        {{ end }}
+    </div>
+</section>
+{{ if not .PrevInSection }}
+<section id="section-list">
+<p>Jump to...</p>
+    {{ range .Site.Sections }}
+    <p><a class="next" href="{{.RelPermalink}}">{{.Title}}</a></p>
+    {{ end }}
+</section>
+{{ end }}
+<section id="meta">
+    {{ if .Lastmod }}
+    <p id="date">Last updated: {{ .Lastmod.Format "Mon Jan 2, 2006" }}</p>{{ end }}
+</section>
+{{ end }}

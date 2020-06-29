@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section id="main" aria-role="main">
+    <h1 id="title">{{ .Title }}</h1>
+    <div>
+        <article id="content">
+            {{ .Content }}
+        </article>
+    </div>
+</section>
+<div id="grid">
+    <ul id="list-grid">
+        {{ range .Pages }}
+        <li>
+            <a href="{{.RelPermalink}}">
+                <h2>{{.Title}}</h2>
+                {{ with .Params.Author }}
+                <strong>Author: </strong>{{ . }}
+                {{ end }}
+            </a>
+            <p id="content">{{ .Summary | truncate 200 }}</p>
+            {{ if .Lastmod }}
+            <p id="date">Last updated: {{ .Lastmod.Format "Mon Jan 2, 2006" }}</p>{{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

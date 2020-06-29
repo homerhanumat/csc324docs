@@ -3,6 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 author: "Your Name Here!"
 date: {{ .Date }}
 draft: true
+type: article
 ---
 
 _Replace this text with your wonderful teaser/summary._
