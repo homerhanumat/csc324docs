@@ -4,7 +4,7 @@ draft: false
 type: profile
 ---
 
-![Homer coming down from utpluthihi.](homerutpluthihi.jpg)
+![Homer coming down from utpluthihi.](/profiles/homer/homerutpluthihi.jpg)
 
 Hello, I'm Homer!  I will write some lorem ipsum about myself.
 
