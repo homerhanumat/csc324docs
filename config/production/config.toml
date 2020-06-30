@@ -1,3 +1,4 @@
+baseURL = "http://csc324docs.netlify.app"
 minify = true
 
 
