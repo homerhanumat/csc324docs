@@ -1,6 +1,6 @@
 ---
 title:  Sorting a Table
-weight: 1
+weight: 3
 ---
 
 ## The Assignment
@@ -20,7 +20,7 @@ Starting from the site that populates a table of Bhangra artists, add three butt
 In the command line, run something like:
 
 ```{sh}
-hugo new --kind article jsapps/sort/<my-solution.md>
+hugo new --kind article jsapps/sort/<my-solution>
 ```
 
 Edit the created `index.md` file, and proceed as usual.

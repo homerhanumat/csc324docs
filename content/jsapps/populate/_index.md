@@ -1,10 +1,6 @@
 ---
 title:  Populating a Table
-weight: 1
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+weight: 2
 ---
 
 ## The Assignment
@@ -24,7 +20,7 @@ When you are done the page should look like this:
 In the command line, run something like:
 
 ```{sh}
-hugo new --kind article jsapps/populate/<my-solution.md>
+hugo new --kind article jsapps/populate/<my-solution>
 ```
 
 Edit the created `index.md` file, and proceed as usual.

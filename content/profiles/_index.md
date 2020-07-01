@@ -5,7 +5,7 @@ weight: 1
 level: 1
 ---
 
-The instructor and class members writer about themselves here.
+The instructor and class members write about themselves here.
 
 <!--more-->
 
