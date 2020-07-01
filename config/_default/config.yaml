@@ -7,7 +7,7 @@ enableGitInfo: true # Show last modified date on pages
 sectionPagesMenu: main
 
 params:
-  description: An open source static site solution for documentation websites.
+  description: A collaborative site for CSC 324 Web Programming at Georgetown College, KY.
   images:
     - /img/screenshot.png # Used in site metadata
   title: OpenGitDocs for Hugo
