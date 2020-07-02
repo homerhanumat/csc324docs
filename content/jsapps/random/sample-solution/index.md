@@ -88,17 +88,23 @@ First we initialize the `ids` array and then we populate it:
 // this will hold the ids:
  let ids = [];
 
- // from artists, strip the id from each video link and
- // push to ids
- function getID(artist) {
+// callback function:
+// from an artist, strip ID from link
+// and push to ids
+function getID(artist) {
    const link = new String(artist.link);
    const pattern = /watch\?v=(.*)$/
    const match = pattern.exec(link);
    ids.push(match[1]);
- }
+}
+
+// populate the ids array:
+artists.forEach(getID);
 {{< / highlight >}}
 
 The key tool in the above code is the regular expression `/watch\?v=(.*)$/`, which captures the text `"watch\?v="` until the end of the URL.  This is the ID of the video!
+
+**Note**:  In `pattern.exec(link)`, the `exec()` method called on the regular expression `pattern` with argument `link` makes JavaScript search the string `link` for matches to `pattern`.  It returns an array, where the first element (at index 0), is the match that it found and the second element (at index 1) is what was captured by the capture-group `(.*)` in the regular expression.  Hence `match[1]` is the desired video ID.  For more on `.exec()` see [RegExp.prototype.exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
 
 Next we set up our event-listener:
 
