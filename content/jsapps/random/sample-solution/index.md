@@ -133,4 +133,10 @@ Note how:
 
 ## Code
 
-{{< rawhtml >}}<a href="random-content-sol.zip" download>This zip-file</a>{{< /rawhtml >}} contains `index.html` and all supporting files.  download and extract to see the full solutions.  A live version can be seen at [http://random-content-sol.surge.sh](http://random-content-sol.surge.sh).
+There are several ways to look at the source code.
+
+* {{< rawhtml >}}<a href="random-content-sol.zip" download>This zip-file</a>{{< /rawhtml >}} contains `index.html` and all supporting files.  Download and extract to see the full solutions.
+* A live version can be seen at [http://random-content-sol.surge.sh](http://random-content-sol.surge.sh).  You can use your browser to save the page, together with supporing files, on your local machine.
+* You can also consult the Gist below (no css files included, though).
+
+{{< gist homerhanumat 2c2c6e05d5658d7ae20c761a4b787983 >}}
