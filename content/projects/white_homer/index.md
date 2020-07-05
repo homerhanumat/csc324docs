@@ -2,7 +2,7 @@
 title: "Homer White's Project"
 author: "Homer White"
 date: 2020-07-05T10:24:24-04:00
-draft: true
+draft: false
 type: article
 ---
 
