@@ -18,3 +18,5 @@ hugo new --kind article projects/<my-project>
 ```
 
 Proceed as usual.
+
+## The Projects
