@@ -22,7 +22,7 @@ collections:
     label: "eloquent"
     folder: "content/eloquent"
     create: true
-    slug: {{slug}}
+    slug: "{{slug}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string", default: "Your Name Here!"}
