@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+<div class="wrapper">
+    <aside>
+        {{- partial "sidebar.html" . -}}
+    </aside>
+
+    <main>
+        <div class="page-content" aria-label="Content">
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </main>
+    </div>
+    {{ if .IsHome }}
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+    </script>
+    {{ end }}
+</body>
+
+</html>
