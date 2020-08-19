@@ -1,6 +1,6 @@
 ---
 title: "Kaitlyn Brewer"
-draft: true
+draft: false
 type: profile
 ---
 
