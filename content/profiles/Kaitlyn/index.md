@@ -20,6 +20,10 @@ img
 </style>
 {{< /rawhtml >}}
 
+{{< rawhtml >}}
+<img src="Katie.JPG" class="center" style="border-radius: 50%;">
+{{< /rawhtml >}}
+
 Hello! I am Kaitlyn Brewer. I am a senior Environmental Science major and Computer Science minor at Georgetown College. I am the president of Georgetown Sustainability Initiative (GSI) and I have worked in
 the biology labs for 4 years as a lab assistant and TA. I am (kind of) in the science honors program.
 
