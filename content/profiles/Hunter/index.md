@@ -1,6 +1,6 @@
 ---
 title: "Hunter Nosek"
-draft: true
+draft: false
 type: profile
 ---
 {{< rawhtml >}}
@@ -39,3 +39,27 @@ Math is something that has (for the most part) always come natural for me, and I
 My parents and brother are living in Nashville now, which is where I spent the bulk of my time during Quarantine. I love it down there and will most likely live there after I graduate in May.
 
 I really enjoyed the web design course that I took last fall and am very excited to learn more about building websites and the javascript language. 
+
+## Things I Like
+{{< rawhtml >}}
+<ul>
+<li>Video Games</li>
+<li>Weight Lifting</li>
+<li>Watching Sports</li>
+<li>Sandwiches</li>
+<li>Outdoors</li>
+<li>Math & Computer Science</li>
+</ul>
+{{< /rawhtml >}}
+
+
+## Things I Dislike
+{{< rawhtml >}}
+<ul>
+<li>Covid</li>
+<li>Cold Weather</li>
+<li>Watermelon</li>
+<li>Last Season of Game of Thrones</li>
+</ul>
+{{< /rawhtml >}}
+
