@@ -3,6 +3,7 @@ title: "Hunter Nosek"
 draft: false
 type: profile
 ---
+
 {{< rawhtml >}}
 <style>
 .center 
@@ -20,11 +21,13 @@ img
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
-<img src="hunter_prof1.jpg" class="center" style="border-radius: 50%;">
+<img src="/profiles/hunter/hunter_prof1.jpg" class="center" style="border-radius: 50%;">
 {{< /rawhtml >}}
 
 
 Hey Guys! My name is Hunter Nosek. I am a senior tennis player here at Georgetown College. My major is Mathematics and my minor is Computer Science. 
+
+<!--more-->>
 
 ## About Me
 
