@@ -22,11 +22,13 @@ img
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
-<img src="matthew_prof1.jpg" class="center" style="border-radius: 50%;">
+<img src="/profiles/matthew/matthew_prof1.jpg" class="center" style="border-radius: 50%;">
 {{< /rawhtml >}}
 
 
 Hello, Im Matt. I am a junior at Georgetown College and play Baseball.
+
+<!--more-->
 
 ## About Me
 
