@@ -43,7 +43,7 @@ This is just the function declaration and the for loop. The for loop will start 
 let old = array[i];
 array[i] = array[array.length - 1 - i];
 ```
-Here, for any point in the array, that element will be replaced by the element in the point of the array length minus 1 minus 1. 
+Here, for any point in the array, that element will be replaced by the element in the point of the array length minus 1 minus i. 
 
 ```{javascript}
  array[array.length - 1 - i] = old;
