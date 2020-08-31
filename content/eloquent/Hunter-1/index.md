@@ -1,5 +1,5 @@
 ---
-title: "Hunter Javascript Article #1"
+title: "arrayToList"
 author: "Hunter Nosek"
 date: 2020-08-29T13:04:55-04:00
 draft: false
