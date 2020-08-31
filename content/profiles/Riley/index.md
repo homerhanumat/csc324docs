@@ -4,10 +4,6 @@ draft: false
 type: profile
 ---
 
-Hello, I'm Riley! I enjoy long walks on the beach, puppies, and turtles. 
-
-<!--more-->
-
 {{< rawhtml >}}
 <style>
 .center 
@@ -25,8 +21,13 @@ img
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
-<img src="SP2094.jpg" class="center" style="border-radius: 50%;">
+<img src="/profiles/riley/SP2094.jpg" class="center" style="border-radius: 50%;">
 {{< /rawhtml >}}
+
+Hello, I'm Riley! I enjoy long walks on the beach, puppies, and turtles. 
+
+
+<!--more-->
 
 Currently, I am a senior at Georgetown College pursuing a double major in Finance and Economics. Over the course of my time at Georgetown, my plans for the future have changed dramatically. At one point or another, I have considered Law School, Masters in Finance, Masters (maybe PhD) in Ecnomics, Masters in Data Science (Recently), dropping out of school entirely to develope Real Estate, taking the CFA exam, etc. While I have vetoed several of those over time, I know that I want to eventually get a masters degree in either Finance/Econ or Data Science. Thus, with only a few months left of college, my plan is to apply for every possible internship, job, or masters program that I possibly can. 
 

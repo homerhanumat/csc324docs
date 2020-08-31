@@ -29,3 +29,6 @@ markup: # See https://gohugo.io/getting-started/configuration-markup for more
     noClasses: true
     style: solarized-light
     tabWidth: 2
+  goldmark:
+    renderer:
+      unsafe: true
