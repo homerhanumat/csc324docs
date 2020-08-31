@@ -36,14 +36,14 @@ Now let's go through it line by line.
 function reverseArrayInPlace(array) {
    for (let i = 0; i < Math.floor(array.length / 2); i++) {
 ```
-This is just the function declaration and the for loop. The for loop will start at the 0th place in the array-- the first element. It will go through each element until it reaches the a point at which i is no longer less than the lowest whole number closest to the length of the array divided by 2. In the book-given test, that point is when i is 2. 
+This is just the function declaration and the for loop. The for loop will start at the 0th place in the array-- the first element. It will go through each element until it reaches the point at which i is no longer less than the lowest whole number closest to the length of the array divided by 2. In the book-given test, that point is when i is 2. 
 
 
 ```{javascript}
 let old = array[i];
 array[i] = array[array.length - 1 - i];
 ```
-Here, for any point in the array, that element will be replaced by the element in the point of the array length minus 1 minus 1. 
+Here, for any point in the array, that element will be replaced by the element in the point of the array length minus 1 minus i. 
 
 ```{javascript}
  array[array.length - 1 - i] = old;
