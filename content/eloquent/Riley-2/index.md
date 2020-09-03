@@ -2,7 +2,7 @@
 title: "Flatening"
 author: "Riley Noe"
 date: 2020-09-03T12:11:15-04:00
-draft: true
+draft: false
 type: article
 ---
 
