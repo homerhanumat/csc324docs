@@ -2,7 +2,7 @@
 title: "Building a Table - Riley"
 author: "Riley Noe"
 date: 2020-09-11T12:30:31-04:00
-draft: true
+draft: false
 type: article
 ---
 
