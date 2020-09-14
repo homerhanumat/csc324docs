@@ -49,55 +49,13 @@ Here is the my index.html solution file code:
         The following table gives a list of great Bhangra 
         musicians.  Enjoy!
       </p>
-      <p>Click the button to sort the table randomly, or click the 
-        header names to sort </p>
-        <th class="button"><button class="my-btn" type="button" onclick="sortTable()">
-          sort</button></th>
       <table id="bhangra">
         <tr>
-          <th onclick="sortTable(0)">Name </th>
-          <th onclick="sortTable(1)">Date Of Birth </th>
-          <th> Link </th>
+          <th>Name</th>
+          <th>Date Of Birth</th>
+          <th>Link</th>
         </tr>
       </table>
-      <script>
-        function sortTable(n) {
-          var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-          table = document.getElementById("bhangra");
-          switching = true;
-          dir = "asc"; 
-          while (switching) {
-            switching = false;
-            rows = table.rows;
-            for (i = 1; i < (rows.length - 1); i++) {
-              shouldSwitch = false;
-              x = rows[i].getElementsByTagName("TD")[n];
-              y = rows[i + 1].getElementsByTagName("TD")[n];
-              if (dir == "asc") {
-                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                  shouldSwitch= true;
-                  break;
-                }
-              } else if (dir == "desc") {
-                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                  shouldSwitch = true;
-                  break;
-                }
-              }
-            }
-            if (shouldSwitch) {
-              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-              switching = true;
-              switchcount ++;      
-            } else {
-              if (switchcount == 0 && dir == "asc") {
-                dir = "desc";
-                switching = true;
-              }
-            }
-          }
-        }
-      </script>
     </section>
   </article>
   <script src="js/custom.js"></script>
@@ -161,7 +119,7 @@ let tablefill = function(table, data) {
 for(let element of data) {
 let row = table.insertRow();
 ```
-this is creating a funtion that takes two input variables the headers and `table` and `data`. the `for` loop is what creates the header names.
+this is creating a funtion that takes two input variables the headers and `table` and `data`. it is also assiging the correct number of rows for the data provided.
 
 ``` javascript
 for (m in element) {
@@ -170,7 +128,7 @@ for (m in element) {
 box.appendChild(text);
 }
 ``` 
-this `for` loop is what places the information into the corresponding cell on the table.
+this `for` loop is what places the information into the corresponding cell on the table. the `appendChild` is what sticks the information in the next row/cell as it it creating a new element under the first element.
 
 ``` javascript
  let table = document.querySelector("#bhangra");
@@ -179,6 +137,14 @@ tablefill(table,artists);
 ```
 this chunk starts off with the variable table being assigned to `bhangra` within the `index.html` file. next we have data being told to start from the begining of the array provided. then the function is finally called to run. 
 
+``` javascript
+  <tr>
+          <th>Name</th>
+          <th>Date Of Birth</th>
+          <th>Link</th>
+        </tr>
+```
+this is in my `index.html` it is assiging the header names 
 
 Here is what the final table looks like when produced into a website.
 ![a table](bhangra.png)
