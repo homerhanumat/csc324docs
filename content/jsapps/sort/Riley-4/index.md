@@ -2,7 +2,7 @@
 title: "Sorting a Table"
 author: "Riley Noe"
 date: 2020-09-11T12:31:05-04:00
-draft: true
+draft: false
 type: article
 ---
 
